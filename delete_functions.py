@@ -27,9 +27,6 @@ def delete_characters_in_files(directory_path, num_chars_to_delete):
 
     print("File modification complete.")
 
-
-
-
 def delete_folders(directory, folders_to_delete):
     """
     Deletes a list of folders in the specified directory.
