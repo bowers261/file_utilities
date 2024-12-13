@@ -31,12 +31,3 @@ def search_and_convert_files(src_directory, dest_directory, file_extension, star
                     output_file_path = os.path.join(dest_directory, f"{os.path.splitext(file)[0]}.pdf")
                     convert_to_pdf(file_path, output_file_path)
                     print(f"Converted {file_path} to {output_file_path}")
-
-if __name__ == "__main__":
-    src_directory = "/path/to/source/directory"
-    dest_directory = "/path/to/destination/directory"
-    file_extension = ".txt"
-    start_date = datetime.date(2023, 1, 1)
-    end_date = datetime.date(2023, 12, 31)
-
-    search_and_convert_files(src_directory, dest_directory, file_extension, start_date, end_date)
