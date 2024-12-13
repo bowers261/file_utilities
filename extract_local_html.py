@@ -24,9 +24,3 @@ def extract_content_from_html_files(directory):
                 with open(f"{file_name}_links.txt", "w") as link_file:
                     for link in links:
                         link_file.write(link + "\n")
-
-
-directory_path = "path/to/html_files_directory"
-
-
-extract_content_from_html_files(directory_path)
