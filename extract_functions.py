@@ -2,7 +2,6 @@ import os
 import re
 from bs4 import BeautifulSoup
 
-
 def extract_links_from_html_re(directory_path, output_file):
     with open(output_file, 'w') as file:
         for filename in os.listdir(directory_path):
@@ -14,7 +13,6 @@ def extract_links_from_html_re(directory_path, output_file):
                     for link in links:
                         file.write(link + '\n')
 
-
 def extract_links_from_html_bs4(directory_path, output_file):
     with open(output_file, 'w') as file:
         for filename in os.listdir(directory_path):
@@ -24,19 +22,3 @@ def extract_links_from_html_bs4(directory_path, output_file):
                     links = soup.find_all('a')
                     for link in links:
                         file.write(link.get('href') + '\n')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
