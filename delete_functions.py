@@ -1,8 +1,6 @@
 import os
 import shutil
 
-
-
 def delete_folders(directory, folders_to_delete):
     for folder in folders_to_delete:
         folder_path = os.path.join(directory, folder)
