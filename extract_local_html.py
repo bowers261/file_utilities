@@ -3,15 +3,6 @@ import re
 from bs4 import BeautifulSoup
 
 def extract_content_from_html_files(directory):
-    """
-    Extracts content from HTML files in a specified directory using Beautiful Soup and regex.
-    
-    Args:
-    directory (str): Path to the directory containing HTML files
-    
-    Returns:
-    None
-    """
     if not os.path.exists(directory):
         print(f"Directory '{directory}' not found.")
         return
